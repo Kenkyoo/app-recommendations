@@ -9,7 +9,7 @@ import { slider } from './slider';
 
 async function getRecommendations(searchTerm) {
   
-axios.post('http://localhost:3000/search', {
+axios.post('https://server-api-2p4x.onrender.com/search', {
     query: searchTerm
   })
   .then(function (response) {
@@ -24,7 +24,7 @@ axios.post('http://localhost:3000/search', {
   });
 }
 
-axios.get('http://localhost:3000/get', {
+axios.get('https://server-api-2p4x.onrender.com/get', {
 })
 .then(function (response) {
   const data = response.data;
