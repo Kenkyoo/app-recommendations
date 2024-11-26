@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones Musicales</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+        <img src="../assets/images/SL.123119.26540.04.jpg" alt="Fondo musical" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
+        <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
+          <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"></div>
+        </div>
+        <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
+          <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"></div>
+        </div>
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:mx-0">
+            <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Explora Nueva Música</h2>
+            <p class="mt-6 text-lg leading-8 text-gray-300">Descubre artistas y canciones que se alinean con tus gustos. Nuestra plataforma te ofrece recomendaciones personalizadas para enriquecer tu experiencia musical.</p>
+          </div>
+          <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+              <a href="#">Nuevos lanzamientos <span aria-hidden="true">&rarr;</span></a>
+              <a href="#">Recomendaciones personalizadas <span aria-hidden="true">&rarr;</span></a>
+              <a href="#">Artistas emergentes <span aria-hidden="true">&rarr;</span></a>
+              <a href="#">Lo más escuchado <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Usuarios activos</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">500K+</dd>
+              </div>
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Recomendaciones diarias</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">1M+</dd>
+              </div>
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Países</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">120+</dd>
+              </div>
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Artistas y canciones</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">2M+</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+  </header>
+  
+  <main>
+    <section>
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <h2 class="text-base font-semibold leading-7 text-indigo-600">Encuentra tu ritmo</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-white-900 sm:text-4xl">Todo lo que necesitas para descubrir nueva música</p>
+        <p class="mt-6 text-lg leading-8 text-white-600">Explora nuestras recomendaciones basadas en tus artistas y géneros favoritos. Conecta con la música que amas y descubre nuevas joyas.</p>
+      </div>
+
+      <div class="container mx-auto">  
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides" id="glide-ul">
+                <!-- Los elementos del carrusel se generarán dinámicamente -->
+              </ul>
+            </div>
+
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+              <button class="glide__bullet" data-glide-dir="=0"></button>
+              <button class="glide__bullet" data-glide-dir="=1"></button>
+              <button class="glide__bullet" data-glide-dir="=2"></button>
+              <button class="glide__bullet" data-glide-dir="=3"></button>
+              <button class="glide__bullet" data-glide-dir="=4"></button>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Anterior</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Siguiente</button>
+            </div>
+        </div>  
+      </div>
+    </section>
+    
+    <section>
+        <div class="container mx-auto w-96 mb-4">
+            <div class="grid grid-cols-1 gap-4">
+                <div>
+                    <p>Busca por artista o canciones favoritas</p>
+                </div>
+                <div class="flex items-center w-64">
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow w-80" placeholder="ej: Los Piojos, Bicho de Ciudad, etc." id="search"/>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          class="h-4 w-4 opacity-70">
+                          <path
+                            fill-rule="evenodd"
+                            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                            clip-rule="evenodd" />
+                        </svg>
+                      </label>
+                      <button class="btn btn-primary" id="submit">Buscar</button>
+                </div>
+                <div id="info-text"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div id="container-info"></div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container w-full mx-auto">
+            <div class="grid grid-cols-3 gap-1 place-items-center" id="results-container"></div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="footer footer-center bg-base-300 text-base-content p-4">
+    <aside>
+      <p>Copyright © <script>document.write(new Date().getFullYear());</script> - Todos los derechos reservados</p>
+    </aside>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="lazysizes.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+
