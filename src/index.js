@@ -6,6 +6,9 @@ import Glide from '@glidejs/glide'
 import { showInfo } from './info';
 import { showResults } from './results';
 import { slider } from './slider';
+import '@glidejs/glide/dist/css/glide.core.min.css';
+import '@glidejs/glide/dist/css/glide.theme.min.css';
+
 
 async function getRecommendations(searchTerm) {
   
